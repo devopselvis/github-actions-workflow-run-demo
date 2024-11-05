@@ -5,7 +5,7 @@ name: Workflow Two
 # Controls when the workflow will run
 on:
   workflow_run:
-    workflows: [workflow-one]
+    workflows: [workflow-one.yml]
     types:
       - completed
 
