@@ -23,6 +23,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo "Workflow Two"
+        run: |
+          echo "workflow two"
+          echo "cat the README.md"
+          cat README.md
 
       
