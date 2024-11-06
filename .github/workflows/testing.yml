@@ -42,6 +42,8 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
+      - name: test
+        run: echo ${{needs.job1.result == 'success'}}
     
 
   
